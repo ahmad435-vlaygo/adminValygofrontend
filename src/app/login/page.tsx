@@ -70,7 +70,8 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3002/api/auth/login", {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3002/api";
+      const response = await fetch(`${apiUrl}/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -89,7 +90,7 @@ export default function LoginPage() {
       dispatch(setAuth({ token: accessToken, user }));
       router.push(user?.role === "sales_team" ? "/dashboard/referral" : "/dashboard");
     } catch {
-      setError("Connection error. Please check if the backend is running on port 3002.");
+      setError("Connection error. Please check if the backend is reachable.");
     } finally {
       setLoading(false);
     }
