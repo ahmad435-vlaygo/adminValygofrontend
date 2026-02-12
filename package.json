@@ -1,0 +1,43 @@
+{
+  "name": "valygo-admin-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/fira-sans": "^5.2.6",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@mui/x-data-grid": "^8.9.0",
+    "@mui/x-date-pickers": "^8.9.2",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tanstack/react-query": "^5.83.0",
+    "axios": "^1.7.7",
+    "dayjs": "^1.11.13",
+    "framer-motion": "^12.23.24",
+    "js-cookie": "^3.0.5",
+    "lucide-react": "^0.562.0",
+    "next": "15.4.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0",
+    "recharts": "^3.7.0",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-redux": "^7.1.34",
+    "eslint": "^9",
+    "eslint-config-next": "15.4.4",
+    "typescript": "^5"
+  }
+}
