@@ -164,7 +164,7 @@ export default function MeetingsPage() {
 
       <Grid container spacing={3}>
         {meetings.map((meeting) => (
-          <Grid item xs={12} md={6} key={meeting.id}>
+          <Grid size={{ xs: 12, md: 6 }} key={meeting.id}>
             <MeetingCard>
               <CardContent>
                 <Box sx={{ display: "flex", justifyContent: "space-between", marginBottom: 2 }}>

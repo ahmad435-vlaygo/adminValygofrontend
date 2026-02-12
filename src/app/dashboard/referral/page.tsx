@@ -238,7 +238,7 @@ export default function ReferralDashboardPage() {
       </Box>
 
       <Grid container spacing={3} sx={{ mb: 3 }}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             sx={{
               background: 'linear-gradient(145deg, rgba(11, 15, 51, 0.9) 0%, rgba(8, 12, 40, 0.95) 100%)',
@@ -266,7 +266,7 @@ export default function ReferralDashboardPage() {
             </ResponsiveContainer>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             sx={{
               background: 'linear-gradient(145deg, rgba(11, 15, 51, 0.9) 0%, rgba(8, 12, 40, 0.95) 100%)',
@@ -312,7 +312,7 @@ export default function ReferralDashboardPage() {
       </Grid>
 
       <Grid container spacing={3}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             sx={{
               background: 'linear-gradient(145deg, rgba(11, 15, 51, 0.9) 0%, rgba(8, 12, 40, 0.95) 100%)',
@@ -350,7 +350,7 @@ export default function ReferralDashboardPage() {
             </Box>
           </Card>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <Card
             sx={{
               background: 'linear-gradient(145deg, rgba(11, 15, 51, 0.9) 0%, rgba(8, 12, 40, 0.95) 100%)',

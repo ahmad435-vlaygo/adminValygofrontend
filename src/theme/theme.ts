@@ -1,6 +1,7 @@
 import { createTheme, Theme } from "@mui/material/styles";
 import { PaletteMode } from "@mui/material";
 import { Fira_Sans } from 'next/font/google';
+import type {} from "@mui/x-data-grid/themeAugmentation";
 
 declare module '@mui/material/styles' {
   interface BreakpointOverrides {

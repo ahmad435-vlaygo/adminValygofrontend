@@ -135,7 +135,7 @@ export default function PlansPage() {
 
       <Grid container spacing={3}>
         {mockPlans.map((plan) => (
-          <Grid item xs={12} md={4} key={plan.id}>
+          <Grid size={{ xs: 12, md: 4 }} key={plan.id}>
             <PlanCard>
               <PlanBadge featured={plan.featured}>
                 {plan.featured ? "FEATURED" : "STANDARD"}

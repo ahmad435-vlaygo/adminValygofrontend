@@ -184,7 +184,7 @@ export default function SalesDashboardPage() {
         {stats.map((stat, index) => {
           const Icon = stat.icon;
           return (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid size={{ xs: 12, sm: 6, md: 3 }} key={index}>
               <StatsCard>
                 <CardContent>
                   <StatIcon>
@@ -207,7 +207,7 @@ export default function SalesDashboardPage() {
 
       {/* Referral Code Section */}
       <Grid container spacing={3} sx={{ marginBottom: 4 }}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <ReferralCard>
             <Typography variant="h5" sx={{ color: "#ffffff", marginBottom: 2 }}>
               Your Referral Code
@@ -228,7 +228,7 @@ export default function SalesDashboardPage() {
           </ReferralCard>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <ReferralCard>
             <Typography variant="h5" sx={{ color: "#ffffff", marginBottom: 2 }}>
               Performance Summary

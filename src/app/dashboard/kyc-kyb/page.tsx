@@ -236,7 +236,7 @@ export default function KYCKYBPage() {
 
       {/* Stats Cards */}
       <Grid container spacing={2} sx={{ mb: 4 }}>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Card sx={{ background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)' }}>
             <CardContent>
               <Typography color="white" variant="body2" sx={{ mb: 1 }}>
@@ -248,7 +248,7 @@ export default function KYCKYBPage() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Card sx={{ background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' }}>
             <CardContent>
               <Typography color="white" variant="body2" sx={{ mb: 1 }}>
@@ -260,7 +260,7 @@ export default function KYCKYBPage() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Card sx={{ background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)' }}>
             <CardContent>
               <Typography color="white" variant="body2" sx={{ mb: 1 }}>
@@ -272,7 +272,7 @@ export default function KYCKYBPage() {
             </CardContent>
           </Card>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+        <Grid size={{ xs: 12, sm: 6, md: 3 }}>
           <Card sx={{ background: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)' }}>
             <CardContent>
               <Typography color="white" variant="body2" sx={{ mb: 1 }}>

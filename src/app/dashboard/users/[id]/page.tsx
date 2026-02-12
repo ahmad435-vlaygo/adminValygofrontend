@@ -19,7 +19,7 @@ import {
 import { ArrowLeft, Download } from "lucide-react";
 import styled from "styled-components";
 import DashboardLayout from "@/components/DashboardLayout";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation";
 
 const PageHeader = styled(Box)`
   display: flex;
@@ -93,13 +93,16 @@ function TabPanel(props: TabPanelProps) {
   );
 }
 
-export default function UserDetailPage({ params }: { params: { id: string } }) {
+export default function UserDetailPage() {
   const router = useRouter();
+  const params = useParams();
   const [tabValue, setTabValue] = useState(0);
+
+  const id = params.id as string;
 
   // Mock user data
   const user = {
-    id: params.id,
+    id,
     name: "John Doe",
     email: "john@example.com",
     phone: "+1 (555) 123-4567",
